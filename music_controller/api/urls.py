@@ -1,7 +1,7 @@
 from xml.etree.ElementInclude import include
 from django.urls import path
-from .views import main
+from .views import RoomView
 
 urlpatterns = [
-    path('', main, name='main'),
+    path('room', RoomView.as_view()),
 ]
